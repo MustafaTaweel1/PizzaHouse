@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="{{ asset('css/main.css')}}">
 
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body id="body" class="font-sans antialiased body">
         <div class="min-h-screen ">
