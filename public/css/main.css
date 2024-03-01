@@ -1,0 +1,414 @@
+:root {
+    --text: #050315;
+    /* --bg: #fbfbfe; */
+    --bg: #EEEEEE;
+    --primary: #2f27ce;
+    --secondary: #001c80ff;
+    --accent: #433bff;
+    --p: 0.8rem;
+    --border5: 0.8rem;
+    --bordercolor: #00ADB5;
+    --index_p: #222831;
+    --index_s: #393E46;
+}
+
+body {
+    /* background: var(--bg); */
+    background-color: #EEEEEE;
+}
+
+
+/*nav bar color background*/
+
+.nav-bg-color {
+    background-color: var(--bg);
+}
+
+.h_flex {
+    display: flex;
+    height: 86%;
+}
+
+.input-file {
+    height: 80%;
+    width: 30%;
+    background-color: var(--bg);
+}
+
+.page-img {
+    background-image: url(http://127.0.0.1:8000/storage/13566.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin-top: -26px;
+    margin-bottom: -25px;
+}
+
+.inputitem img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+}
+
+.input {
+    height: 40px;
+    border: none;
+    border-left: 3px solid var(--primary);
+    width: 300px;
+    margin-top: 0px;
+    background: var(--bg);
+}
+
+.input:hover {
+    border: none;
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+.input:focus {
+    border: none;
+    border-bottom: 3px solid var(--primary);
+    outline: none;
+}
+
+.inputitem {
+    width: 350px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.inputitem select {
+    height: 40px;
+    border: none;
+    border-left: 3px solid var(--primary);
+    width: 300px;
+    margin-top: 0px;
+}
+
+.typeticket {
+    margin-left: 15px;
+    margin-top: 60px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.color-effect {
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnsen {
+    margin-top: 70px;
+}
+
+.primary-button {
+    padding: 0.5em 2em;
+    background: linear-gradient(80deg, var(--secondary), var(--accent));
+    color: var(--bg);
+    border-radius: var(--border05);
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+    display: inline-block;
+    font-size: var(--p);
+    z-index: 2;
+    white-space: nowrap;
+    border-radius: 0.4em;
+}
+
+.home-button {
+    padding: 0.5em 2em;
+    background: linear-gradient(80deg, var(--secondary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--bg);
+    border-radius: var(--border05);
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+    display: inline-block;
+    font-size: var(--p);
+    z-index: 2;
+    white-space: nowrap;
+    border-radius: 0.4em;
+    font-weight: bold;
+}
+
+.toppings {
+    display: grid;
+    border: none;
+    margin-top: 10px;
+}
+
+
+/* index page */
+
+.pizza-index {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.index-title {
+    text-align: center;
+    font-weight: bolder;
+    /* background: linear-gradient(120deg, var(--primary), var(--accent)); */
+    background: linear-gradient(120deg, var(--index_p), var(--index_s));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pizza-item {
+    margin-top: 30px;
+    margin-inline: 10%;
+    width: 80%;
+    border: 2px solid var(--bordercolor);
+    text-align: center;
+}
+
+.pizza-item-thead {
+    background-color: var(--bordercolor);
+    color: var(--index_p);
+    font-size: 38px;
+    justify-content: space-between;
+}
+
+.pizza-item-tbody {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.pizza-item-tbody .item {
+    height: 100px;
+    font-size: 30px;
+    /* border-bottom: 5px solid var(--accent); */
+}
+
+.pizza-item-tbody .date {
+    width: 40%;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: var(--bordercolor);
+}
+
+.pizza-item-tbody .name {
+    width: 40%;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: var(--bordercolor);
+}
+
+.pizza-item-tbody .id {
+    width: 20%;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: var(--bordercolor);
+}
+
+.order-button {
+    color: var(--index_p);
+    text-decoration: none;
+    border-radius: var(--border05);
+    font-size: 30px;
+    z-index: 2;
+    border-radius: 0.4em;
+    font-weight: bold;
+}
+
+.order-button:hover {
+    color: var(--bordercolor);
+    text-shadow: 1px 1px 1px var(--index_p);
+    transition: transform ease 0.2s, box-shadow ease 0.2s;
+}
+
+.empty {
+    text-align: center;
+    color: var(--bordercolor);
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+
+/*pizza-details*/
+
+.pizza-details {
+    width: 70%;
+    margin-inline: 15%;
+}
+
+.pizza-details .order-table {
+    border: 3px solid var(--bordercolor);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    border-width: 0px 2px 2px 0px;
+    border-color: var(--bordercolor);
+    border-style: solid;
+}
+
+.total {
+    margin-right: 45px;
+}
+
+.btn-complete {
+    background: linear-gradient(80deg, var(--index_p), var(--bordercolor));
+    margin-left: 45%;
+    margin-top: 40px;
+}
+
+.back {
+    background: linear-gradient(80deg, var(--bordercolor), var(--index_s));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
+.image-index {
+    width: 450px;
+    height: 450px;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container-text .text {
+    position: relative;
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 64px;
+}
+
+.container-text .text.first-text {
+    color: black;
+}
+
+.text.sec-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg);
+    border-left: 2px solid var(--primary);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+    40%,
+    60% {
+        left: 100%;
+        width: 0%;
+    }
+    100% {
+        left: 0%;
+        width: 100%;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.ml-20 {
+    margin-left: 50px;
+}
+
+.mr-20 {
+    margin-left: 50px;
+}
+
+.btn-hub {
+    margin-top: 20px;
+}
+
+.btn-hub button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.btn-hub button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.btn-hub button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.btn-hub button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.btn-hub button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.text-center {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
