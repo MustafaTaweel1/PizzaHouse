@@ -14,7 +14,16 @@
 
 body {
     /* background: var(--bg); */
-    background-color: #EEEEEE;
+    background-color: var(--bg)
+}
+
+.body {
+    background-color: var(--bg)
+}
+
+.create-pizza {
+    margin-top: 70px;
+    padding: 20px;
 }
 
 
